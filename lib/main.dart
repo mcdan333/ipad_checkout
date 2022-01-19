@@ -49,9 +49,12 @@ class MyCustomFormState extends State<MyCustomForm> {
     return Form(
       key: _formKey,
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          Text('Enter student name or id:'),
           AutocompleteBasicExample(),
+          Text('Enter device tag number:'),
+          TextField(),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 16.0),
             child: ElevatedButton(
@@ -68,6 +71,7 @@ class MyCustomFormState extends State<MyCustomForm> {
               child: const Text('Submit'),
             ),
           ),
+
         ],
       ),
     );
